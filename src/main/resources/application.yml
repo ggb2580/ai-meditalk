@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: meditalk
+  data:
+#    MongoDB数据库
+    mongodb:
+      uri: mongodb://localhost/test
+server:
+  port: 8080
+#  大模型
+langchain4j:
+  open-ai:
+    chat-model:
+      api-key: demo
+      model-name: gpt-4o-mini
+      base-url: http://langchain4j.dev/demo/openai/v1
