@@ -5,6 +5,14 @@ spring:
 #    MongoDB数据库
     mongodb:
       uri: mongodb://localhost/test
+
+#   mysql 数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/meditalk?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 123456
+
 server:
   port: 8080
 #  大模型
@@ -14,3 +22,7 @@ langchain4j:
       api-key: demo
       model-name: gpt-4o-mini
       base-url: http://langchain4j.dev/demo/openai/v1
+#集成阿里通义千问-通用文本向量-v3
+    embedding-model:
+      api-key: ${DASH_SCOPE_API_KEY}
+      model-name: text-embedding-v3

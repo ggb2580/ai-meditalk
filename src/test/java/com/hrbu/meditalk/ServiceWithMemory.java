@@ -61,4 +61,9 @@ public class ServiceWithMemory {
         String chat2 = memoryChatAssistant.chat(6,"你是妈妈生的还是爸爸生的");
         System.out.println(chat2);
     }
+
+    @Test
+    public void test04(){
+        System.out.println(876532*64653);
+    }
 }
