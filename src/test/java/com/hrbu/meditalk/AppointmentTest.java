@@ -18,7 +18,7 @@ public class AppointmentTest {
         String chat = mediTalkChatAssitant.chat(13L, "帮我查一下我的预约记录");
         System.out.println(chat);
 
-        // 直接写死，模拟输入
+        //模拟用户预约挂号
         String name = "张三";
         String department = "内科";
         String date = "2026-04-10";
